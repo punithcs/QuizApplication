@@ -92,18 +92,32 @@ export default function Dashboard() {
                 </div>
               ))}
               <div className="buttons">
-                <button onClick={e => Previous(e)} disabled={disabledPrev}>
+                <button
+                  className="prev"
+                  onClick={e => Previous(e)}
+                  disabled={disabledPrev}
+                >
                   {" "}
                   Previous
                 </button>
 
-                <button onClick={e => Submit(profile.correctAnswer)}>
+                <button
+                  className="submit"
+                  onClick={e => Submit(profile.correctAnswer)}
+                >
                   Submit Answer
                 </button>
-                <button onClick={e => ShowAnswer(profile.questionId)}>
+                <button
+                  className="show"
+                  onClick={e => ShowAnswer(profile.questionId)}
+                >
                   Show Answer
                 </button>
-                <button onClick={e => Next(e)} disabled={disabledNext}>
+                <button
+                  className="next"
+                  onClick={e => Next(e)}
+                  disabled={disabledNext}
+                >
                   Next
                 </button>
               </div>
