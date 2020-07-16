@@ -2,3 +2,38 @@
   font-family: sans-serif;
   text-align: center;
 }
+.buttons {
+  margin: 20px 0 0 0;
+}
+button {
+  border: 0;
+  color: #000;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin: 0 10px 0 0;
+}
+.button:disabled {
+  pointer-events: none;
+  color: #ededed;
+}
+button.prev {
+  color: rgb(194, 26, 26);
+}
+button.submit {
+  color: rgb(17, 17, 165);
+}
+button.show {
+  color: rgb(43, 192, 50);
+}
+.option-btn {
+  max-width: 150px;
+  margin: 0 auto;
+}
+.option-btn input {
+  width: 10%;
+}
+.option-btn span.options {
+  display: inline-block;
+  width: 80%;
+  text-align: left;
+}
